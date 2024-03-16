@@ -1,6 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-import { World } from "./ui/globe";
+import dynamic from "next/dynamic";
+
+const World = dynamic(() => import("./ui/globe").then((m) => m.World), {
+  ssr: false,
+});
 
 export function GlobeDemo() {
   const globeConfig = {
