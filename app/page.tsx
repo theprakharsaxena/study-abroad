@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import { InfiniteMovingCardsDemo } from "./components/InfiniteMovingCardsDemo";
 import { LampDemo } from "./components/LampDemo";
+import MobileServicesPage from "./components/MobileServicesPage";
 import RegistrationForm from "./components/RegistrationForm";
 import Services from "./components/Services";
 import WhatsApp from "./components/WhatsApp";
@@ -17,7 +18,12 @@ export default function Home() {
     <div className="font-body">
       <WhatsApp />
       <Hero />
-      <Services />
+      <div className="hidden sm:flex">
+        <Services />
+      </div>
+      <div className="sm:hidden flex">
+        <MobileServicesPage />
+      </div>
       <Countries />
       <LampDemo />
       <RegistrationForm />

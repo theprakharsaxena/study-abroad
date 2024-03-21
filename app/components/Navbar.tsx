@@ -56,7 +56,7 @@ const Navbar = () => {
         }
       >
         {topbar && (
-          <div className="mx-12 flex justify-between items-center p-3 text-white my-2">
+          <div className="mx-[8vw] sm:mx-12 flex justify-between items-center py-3 sm:p-3 text-white my-2">
             <a href="/" className="hover:animate-jump">
               <Image
                 src="/images/logo_bg_remove.png"
@@ -67,26 +67,6 @@ const Navbar = () => {
               />
             </a>
             <div className="flex space-x-40 items-center">
-              <div className="flex space-x-20">
-                {/* <div className="flex items-center space-x-2">
-                  <GoClock className="text-black text-[42px]" />
-                  <div className="">
-                    <p className="text-[#52813d]">Monday - Friday</p>
-                    <span className="text-[#8ec442] font-semibold">
-                      8:00AM-8:00PM
-                    </span>
-                  </div>
-                </div> */}
-                {/* <div className="flex items-center space-x-2">
-                  <IoCallOutline className="text-black text-[42px]" />
-                  <div className="">
-                    <p className="text-[#52813d]">Call Us</p>
-                    <span className="text-[#8ec442] font-semibold">
-                      +91 99531 02105
-                    </span>
-                  </div>
-                </div> */}
-              </div>
               <div className="flex space-x-2">
                 <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
                   <FaFacebookF className="text-[#52813d]" />
@@ -104,7 +84,7 @@ const Navbar = () => {
             </div>
             <div
               onClick={handleNav}
-              className="block sm:hidden z-10 cursor-pointer  mr-1"
+              className="block sm:hidden z-10 cursor-pointer text-[#52813d]"
             >
               {nav ? (
                 <AiOutlineClose size={20} className="" />
@@ -120,9 +100,24 @@ const Navbar = () => {
               }
             >
               <ul>
-                <li className="p-4 text-4xl hover:underline hover:underline-offset-8 ">
+                <li className="p-4 text-4xl hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
                   <a href="#home" onClick={handleNav}>
                     Home
+                  </a>
+                </li>
+                <li className="p-4 text-4xl hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+                  <a href="#services" onClick={handleNav}>
+                    Services
+                  </a>
+                </li>
+                <li className="p-4 text-4xl hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+                  <a href="#about" onClick={handleNav}>
+                    About
+                  </a>
+                </li>
+                <li className="p-4 text-4xl hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+                  <a href="#contact" onClick={handleNav}>
+                    Contact
                   </a>
                 </li>
               </ul>
@@ -132,27 +127,27 @@ const Navbar = () => {
         <div
           className={
             topbar
-              ? "mx-[60px] py-2 pl-3 bg-gray-500/10 relative rounded-xl"
-              : "bg-white mx-[60px] py-2 pl-3 relative rounded-xl"
+              ? "mx-[60px] py-2 pl-3 bg-gray-500/10 relative rounded-xl hidden sm:flex"
+              : "bg-white mx-[60px] py-2 pl-3 relative rounded-xl hidden sm:flex"
           }
         >
           <ul className="hidden sm:flex">
-            <li className="p-4 text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 md:p-4 md:text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
               <a href="#home" onClick={handleNav}>
                 Home
               </a>
             </li>
-            <li className="p-4 text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 md:p-4 md:text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
               <a href="#services" onClick={handleNav}>
                 Services
               </a>
             </li>
-            <li className="p-4 text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 md:p-4 md:text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
               <a href="#about" onClick={handleNav}>
                 About
               </a>
             </li>
-            <li className="p-4 text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 md:p-4 md:text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
               <a href="#contact" onClick={handleNav}>
                 Contact
               </a>

@@ -65,17 +65,22 @@ function Countries() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="bg-[#eff8ff] py-20" id="countries">
+    <div
+      className="bg-[#eff8ff] py-10 sm:py-20 px-[8vw] sm:px-0"
+      id="countries"
+    >
       <div className="animate-fade-up">
-        <h2 className="text-7xl text-[#52813d] font-bold flex justify-center py-20 animate-fade-up">
+        <h2 className="text-5xl sm:text-7xl text-[#52813d] font-bold flex justify-center text-center py-10 sm:py-20 animate-fade-up">
           Where do you want to study?
         </h2>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 py-16">
-        <div className="flex items-center justify-center">
-          <div className="pl-[5vw] flex flex-col justify-center space-y-5 h-full pb-16">
-            <h3 className="text-5xl font-bold">Multiple Locations</h3>
-            <p className="text-[#8ec442] text-2xl font-bold text-justify py-2.5">
+        <div className="flex items-center justify-center order-1 sm:order-none mt-16 sm:mt-0">
+          <div className="sm:pl-[5vw] flex flex-col justify-center space-y-5 h-full pb-16">
+            <h3 className="text-3xl sm:text-5xl font-bold">
+              Multiple Locations
+            </h3>
+            <p className="text-[#8ec442] text-xl sm:text-2xl font-bold text-justify py-2.5">
               Our team of experienced professionals recognized the increasing
               demand for quality education abroad and identified the need for
               personalized guidance and support throughout the application

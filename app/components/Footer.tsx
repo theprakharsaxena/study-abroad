@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <div className="bg-[#eff8ff]">
       <div className="mx-10 py-12 text-black">
-        <div className="grid grid-cols-9 gap-20">
-          <div className="flex flex-col items-center space-y-5 col-span-2">
+        <div className="grid grid-cols-1 sm:grid-cols-9 gap-20">
+          <div className="flex flex-col items-center space-y-5 sm:col-span-2">
             <Image
               src="/images/logo.jpg"
               width={165}
@@ -35,7 +35,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-start space-y-16 col-span-4">
+          <div className="flex flex-col items-start space-y-16 sm:col-span-4">
             <div className="flex items-center justify-around w-full">
               <a href="/our-cause" className="other-link">
                 Home
@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-3">
+          <div className="sm:col-span-3">
             <p className="flex font-normal text-sm text-black items-end h-full">
               Noida, India <br />
               +91 9953102105 <br />
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-[#8ec442] p-1 mt-8 pb-1"></div>
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:justify-between">
           <p className="font-normal text-sm pt-3">
             Horizonwings Overseas Education &copy; {year} All Rights Reserved
           </p>
