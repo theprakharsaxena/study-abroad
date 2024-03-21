@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,4 +31,29 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.page1 {
+  background-image: url("/images/bg1.webp");
+}
+
+.swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide-img {
+  object-fit: cover;
+  height: 320px;
+  width: 240px;
 }
