@@ -1,7 +1,7 @@
 "use client";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useEffect, useState } from "react";
-import { FaArrowRight, FaFacebookF, FaTwitter } from "react-icons/fa6";
+import { FaArrowRight, FaFacebookF } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 import Image from "next/image";
@@ -71,9 +71,9 @@ const Navbar = () => {
                 <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
                   <FaFacebookF className="text-[#52813d]" />
                 </div>
-                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
+                {/* <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
                   <FaTwitter className="text-[#52813d]" />
-                </div>
+                </div> */}
                 <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
                   <AiFillInstagram className="text-[#52813d]" />
                 </div>
@@ -106,7 +106,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="p-4 text-4xl hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
-                  <a href="#services" onClick={handleNav}>
+                  <a href="#services2" onClick={handleNav}>
                     Services
                   </a>
                 </li>

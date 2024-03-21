@@ -65,10 +65,7 @@ function Countries() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div
-      className="bg-[#eff8ff] py-10 sm:py-20 px-[8vw] sm:px-0"
-      id="countries"
-    >
+    <div className="bg-[#eff8ff] py-10 sm:py-20 px-[8vw] sm:px-0" id="about">
       <div className="animate-fade-up">
         <h2 className="text-5xl sm:text-7xl text-[#52813d] font-bold flex justify-center text-center py-10 sm:py-20 animate-fade-up">
           Where do you want to study?

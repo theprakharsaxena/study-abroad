@@ -106,7 +106,7 @@ function MobileServicesPage() {
   }, []);
 
   return (
-    <div className="bg-[#8ec442] pt-20 px-[8vw] sm:px-0" id="services">
+    <div className="bg-[#8ec442] pt-20 px-[8vw] sm:px-0" id="services2">
       <div className={serviceAnimation ? "animate-fade-up" : ""}>
         <h2 className="text-5xl text-white font-bold flex justify-center pb-10 underline underline-offset-8 animate-fade-up">
           Services
