@@ -164,7 +164,7 @@ function Services() {
   return (
     <div className="bg-[#8ec442] pt-20" id="services">
       <div className={serviceAnimation ? "animate-fade-up" : ""}>
-        <h2 className="text-8xl text-white font-bold flex justify-center pb-10 underline underline-offset-8 animate-fade-up">
+        <h2 className="text-8xl text-white font-bold flex justify-center pb-10 animate-fade-up">
           Services
         </h2>
       </div>
@@ -178,7 +178,7 @@ function Services() {
         >
           <div className="flex items-center justify-center">
             <div className="pl-[5vw] flex flex-col justify-center space-y-5 h-full">
-              <h3 className="text-4xl underline underline-offset-8 font-bold text-white">
+              <h3 className="text-4xl font-bold text-white">
                 Education Loan and Visas
               </h3>
               <p className="text-white text-xl">
@@ -234,9 +234,7 @@ function Services() {
           >
             <div className="flex items-center justify-center">
               <div className="pl-[5vw] flex flex-col justify-center space-y-5 h-full">
-                <h3 className="text-4xl underline underline-offset-8 font-bold text-white">
-                  {title}
-                </h3>
+                <h3 className="text-4xl font-bold text-white">{title}</h3>
                 <p className="text-white text-xl">{description}</p>
               </div>
             </div>
@@ -253,9 +251,7 @@ function Services() {
         >
           <div className="flex items-center justify-center">
             <div className="pl-[5vw] flex flex-col justify-center space-y-5 h-full">
-              <h3 className="text-4xl underline underline-offset-8 font-bold text-white">
-                Scholarship
-              </h3>
+              <h3 className="text-4xl font-bold text-white">Scholarship</h3>
               <p className="text-white text-xl">
                 Horizonwings Overseas Education is your premier gateway to
                 global learning possibilities. We specialize in guiding students

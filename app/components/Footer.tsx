@@ -1,7 +1,6 @@
 "use client";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { IoLogoWhatsapp } from "react-icons/io5";
 import Image from "next/image";
 
 var today = new Date();
@@ -21,18 +20,27 @@ const Footer = () => {
               "
             />
             <div className="flex items-start space-x-10">
-              <div className="text-2xl cursor-pointer flex items-center justify-center rounded-full bg-[#eff8ff]/10">
+              <a
+                href="https://horizonwingsoverseaseducation.com/your-facebook-url"
+                className="text-2xl cursor-pointer flex items-center justify-center rounded-full bg-[#eff8ff]/10"
+              >
                 <FaFacebookF className="text-[#8ec442]" />
-              </div>
+              </a>
               {/* <div className="text-2xl cursor-pointer flex items-center justify-center rounded-full bg-[#eff8ff]/10">
               <FaTwitter className="text-[#8ec442]" />
             </div> */}
-              <div className="text-2xl cursor-pointer flex items-center justify-center rounded-full bg-[#eff8ff]/10">
+              <a
+                href="https://www.instagram.com/horizonwings_overseaseducation"
+                className="text-2xl cursor-pointer flex items-center justify-center rounded-full bg-[#eff8ff]/10"
+              >
                 <AiFillInstagram className="text-[#8ec442]" />
-              </div>
-              <div className="text-2xl cursor-pointer flex items-center justify-center rounded-full bg-[#eff8ff]/10">
-                <IoLogoWhatsapp className="text-[#8ec442]" />
-              </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/horizonwings-overseas-education/"
+                className="text-2xl cursor-pointer flex items-center justify-center rounded-full bg-[#eff8ff]/10"
+              >
+                <FaLinkedin className="text-[#8ec442]" />
+              </a>
             </div>
           </div>
           <div className="flex flex-col items-start space-y-16 sm:col-span-4">
@@ -58,9 +66,12 @@ const Footer = () => {
                   placeholder="Enter your email address"
                   className="bg-opacity-15 border-0 text-black py-3 px-4 w-full rounded-l"
                 />
-                <button className="bg-[#8ec442] px-12 py-3 text-white rounded-r">
+                <a
+                  href="#contact"
+                  className="bg-[#8ec442] px-12 py-3 text-white rounded-r"
+                >
                   Join
-                </button>
+                </a>
               </div>
             </div>
           </div>

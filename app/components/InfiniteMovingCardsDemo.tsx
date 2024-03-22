@@ -3,7 +3,12 @@ import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-[30rem] sm:h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <div className="animate-fade-up px-[8vw]">
+        <h2 className="text-5xl sm:text-7xl text-[#52813d] font-bold flex justify-center text-center py-10 sm:py-20 animate-fade-up">
+          Testimonials
+        </h2>
+      </div>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

@@ -39,7 +39,7 @@ const data = [
   },
   {
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag-of-uae.png",
+      "https://i.pinimg.com/originals/7d/a4/7e/7da47e14052a9d3bdf3bf9a0d96dca29.jpg",
     title: "Dubai",
   },
   {
@@ -58,7 +58,7 @@ const imageLoader = ({
   width: number;
   quality?: number;
 }) => {
-  return `${src}?w=${width}&q=${quality || 75}`;
+  return `${src}?w=${width}&q=${quality || 100}`;
 };
 
 function Countries() {
@@ -67,7 +67,7 @@ function Countries() {
   return (
     <div className="bg-[#eff8ff] py-10 sm:py-20 px-[8vw] sm:px-0" id="about">
       <div className="animate-fade-up">
-        <h2 className="text-5xl sm:text-7xl text-[#52813d] font-bold flex justify-center text-center py-10 sm:py-20 animate-fade-up">
+        <h2 className="text-4xl sm:text-7xl text-[#52813d] font-bold flex justify-center text-center py-10 sm:py-20 animate-fade-up">
           Where do you want to study?
         </h2>
       </div>
@@ -77,7 +77,7 @@ function Countries() {
             <h3 className="text-3xl sm:text-5xl font-bold">
               Multiple Locations
             </h3>
-            <p className="text-[#8ec442] text-xl sm:text-2xl font-bold text-justify py-2.5">
+            <p className="text-[#8ec442] text-lg sm:text-2xl font-bold sm:text-justify py-2.5">
               Our team of experienced professionals recognized the increasing
               demand for quality education abroad and identified the need for
               personalized guidance and support throughout the application
@@ -103,13 +103,14 @@ function Countries() {
                     src={image}
                     quality={100}
                     alt="slide_image"
-                    width={300} // Example width, adjust as needed
-                    height={300} // Example height, adjust as needed
+                    width={200} // Example width, adjust as needed
+                    height={200} // Example height, adjust as needed
                   />
                   <div
                     className="absolute bottom-0 right-0 left-0 top-0 hover:bg-black/40 flex justify-center items-center"
                     onMouseEnter={() => setHoveredIndex(index)}
                     onMouseLeave={() => setHoveredIndex(null)}
+                    onTouchMove={() => setHoveredIndex(index)}
                   >
                     {hoveredIndex === index && title}
                   </div>
@@ -117,7 +118,8 @@ function Countries() {
               </SwiperSlide>
             );
           })}
-          {/* <SwiperSlide>
+        </Swiper>
+        {/* <SwiperSlide>
             <img
               className="swiper-slide-img"
               src={slide_image_2}
@@ -159,7 +161,6 @@ function Countries() {
               alt="slide_image"
             />
           </SwiperSlide> */}
-        </Swiper>
       </div>
     </div>
   );

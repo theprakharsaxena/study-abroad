@@ -34,12 +34,25 @@ body {
 }
 
 .page1 {
-  background-image: url("/images/bg1.webp");
+  background-image: url("/images/bgm1.webp");
+}
+
+@media (min-width: 640px) {
+  .page1 {
+    background-image: url("/images/bg1.webp");
+  }
 }
 
 .swiper {
-  width: 240px;
-  height: 320px;
+  width: 180px;
+  height: 240px;
+}
+
+@media (min-width: 640px) {
+  .swiper {
+    width: 240px;
+    height: 320px;
+  }
 }
 
 .swiper-slide {
@@ -54,6 +67,13 @@ body {
 
 .swiper-slide-img {
   object-fit: cover;
-  height: 320px;
-  width: 240px;
+  width: 180px;
+  height: 240px;
+}
+
+@media (min-width: 640px) {
+  .swiper-slide-img {
+    width: 240px;
+    height: 320px;
+  }
 }

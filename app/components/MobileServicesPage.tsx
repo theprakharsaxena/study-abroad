@@ -108,7 +108,7 @@ function MobileServicesPage() {
   return (
     <div className="bg-[#8ec442] pt-20 px-[8vw] sm:px-0" id="services2">
       <div className={serviceAnimation ? "animate-fade-up" : ""}>
-        <h2 className="text-5xl text-white font-bold flex justify-center pb-10 underline underline-offset-8 animate-fade-up">
+        <h2 className="text-5xl text-white font-bold flex justify-center pb-10 animate-fade-up">
           Services
         </h2>
       </div>
@@ -131,10 +131,8 @@ function MobileServicesPage() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="flex flex-col justify-center space-y-5 h-full">
-                  <h3 className="text-3xl underline underline-offset-8 font-bold text-white">
-                    {title}
-                  </h3>
-                  <p className="text-white text-lg">{description}</p>
+                  <h3 className="text-2xl font-bold text-white">{title}</h3>
+                  <p className="text-white text-md">{description}</p>
                 </div>
               </div>
             </div>

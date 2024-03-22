@@ -27,7 +27,12 @@ export default function Home() {
       <Countries />
       <LampDemo />
       <RegistrationForm />
+      {/* <div className="hidden sm:flex"> */}
       <InfiniteMovingCardsDemo />
+      {/* </div> */}
+      {/* <div className="sm:hidden flex">
+        <MobileTestimonial />
+      </div> */}
       <Footer />
     </div>
   );

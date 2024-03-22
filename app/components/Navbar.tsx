@@ -2,8 +2,8 @@
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import { FaArrowRight, FaFacebookF } from "react-icons/fa6";
-import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 
 const NavbarData = [
@@ -62,24 +62,32 @@ const Navbar = () => {
                 src="/images/logo_bg_remove.png"
                 width={125}
                 height={125}
-                alt="Horizonwings Overseas Education
-              "
+                alt="Horizonwings Overseas Education"
               />
             </a>
             <div className="flex space-x-40 items-center">
               <div className="flex space-x-2">
-                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
+                <a
+                  href="https://horizonwingsoverseaseducation.com/your-facebook-url"
+                  className="w-10 sm:h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer"
+                >
                   <FaFacebookF className="text-[#52813d]" />
-                </div>
-                {/* <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
+                </a>
+                {/* <div className="w-10 sm:h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
                   <FaTwitter className="text-[#52813d]" />
                 </div> */}
-                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
+                <a
+                  href="https://www.instagram.com/horizonwings_overseaseducation"
+                  className="w-10 sm:h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer"
+                >
                   <AiFillInstagram className="text-[#52813d]" />
-                </div>
-                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
-                  <IoLogoWhatsapp className="text-[#52813d]" />
-                </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/horizonwings-overseas-education/"
+                  className="w-10 sm:h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer"
+                >
+                  <FaLinkedin className="text-[#52813d]" />
+                </a>
               </div>
             </div>
             <div
@@ -100,22 +108,22 @@ const Navbar = () => {
               }
             >
               <ul>
-                <li className="p-4 text-4xl hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+                <li className="p-4 text-4xl hover:text-[#52813d] hover:animate-wiggle">
                   <a href="#home" onClick={handleNav}>
                     Home
                   </a>
                 </li>
-                <li className="p-4 text-4xl hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+                <li className="p-4 text-4xl hover:text-[#52813d] hover:animate-wiggle">
                   <a href="#services2" onClick={handleNav}>
                     Services
                   </a>
                 </li>
-                <li className="p-4 text-4xl hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+                <li className="p-4 text-4xl hover:text-[#52813d] hover:animate-wiggle">
                   <a href="#about" onClick={handleNav}>
                     About
                   </a>
                 </li>
-                <li className="p-4 text-4xl hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+                <li className="p-4 text-4xl hover:text-[#52813d] hover:animate-wiggle">
                   <a href="#contact" onClick={handleNav}>
                     Contact
                   </a>
@@ -132,36 +140,37 @@ const Navbar = () => {
           }
         >
           <ul className="hidden sm:flex">
-            <li className="p-2 md:p-4 md:text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 md:p-4 md:text-lg hover:text-[#52813d] hover:animate-wiggle">
               <a href="#home" onClick={handleNav}>
                 Home
               </a>
             </li>
-            <li className="p-2 md:p-4 md:text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 md:p-4 md:text-lg hover:text-[#52813d] hover:animate-wiggle">
               <a href="#services" onClick={handleNav}>
                 Services
               </a>
             </li>
-            <li className="p-2 md:p-4 md:text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 md:p-4 md:text-lg hover:text-[#52813d] hover:animate-wiggle">
               <a href="#about" onClick={handleNav}>
                 About
               </a>
             </li>
-            <li className="p-2 md:p-4 md:text-lg hover:underline hover:underline-offset-8 hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 md:p-4 md:text-lg hover:text-[#52813d] hover:animate-wiggle">
               <a href="#contact" onClick={handleNav}>
                 Contact
               </a>
             </li>
           </ul>
-          <div className="absolute right-0 h-full top-0 flex cursor-pointer hover:animate-fade-right">
+          <a
+            href="#contact"
+            className="absolute right-0 h-full top-0 flex cursor-pointer hover:animate-fade-right"
+          >
             <div className="border-l-transparent border-solid border-l-[35px] border-b-[75px] border-b-[#52813d]"></div>
             <div className="bg-[#52813d] px-[52px] flex items-center text-white text-lg rounded-r-[0.65rem] space-x-3">
-              <a href={`/`} className="">
-                Register Now
-              </a>
+              <h4 className="">Register Now</h4>
               <FaArrowRight />
             </div>
-          </div>
+          </a>
         </div>
       </div>
       {!topbar && <div className="py-[84.5px] px-40"></div>}
