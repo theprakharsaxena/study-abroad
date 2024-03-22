@@ -70,12 +70,15 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5" id="contact">
+    <div
+      className="grid grid-cols-1 sm:grid-cols-2 gap-5 bg-[#eff8ff]"
+      id="contact"
+    >
       <div className="w-full h-full flex justify-center items-center bg-white">
         <GlobeDemo />
       </div>
       <div>
-        <section className=" ">
+        <section className="">
           <div className="py-8 lg:py-16 px-4 max-w-screen-md">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
               Register Now

@@ -74,7 +74,7 @@ function Countries() {
       <div className="grid grid-cols-1 lg:grid-cols-2 py-16">
         <div className="flex items-center justify-center order-1 sm:order-none mt-16 sm:mt-0">
           <div className="sm:pl-[5vw] flex flex-col justify-center space-y-5 h-full pb-16">
-            <h3 className="text-3xl sm:text-5xl font-bold">
+            <h3 className="text-3xl sm:text-5xl font-bold text-black">
               Multiple Locations
             </h3>
             <p className="text-[#8ec442] text-lg sm:text-2xl font-bold sm:text-justify py-2.5">
