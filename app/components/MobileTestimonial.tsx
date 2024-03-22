@@ -1,100 +1,77 @@
-import Image from "next/image";
+"use client";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const testimonials = [
+  {
+    quote:
+      "Choosing HorizonWings Overseas Education was one of the best decisions. The team helped me a lot to secure admission to a top university abroad. From selecting the right program to visa assistance, they made the entire process stress-free and efficient.",
+    name: "Devansh Mittal",
+    title: "",
+  },
+  {
+    quote:
+      "Thanks to HorizonWings Overseas Education, I was able to pursue my dream of studying abroad without any problem. Their personalized guidance and support throughout the application process made all the difference. I highly recommend their services to anyone seeking to pursue higher studies abroad",
+    name: "Yash Agarwal",
+    title: "",
+  },
+  {
+    quote:
+      "I cannot thank enough HorizonWings Overseas Education for guiding me toward my educational goals overseas. Their knowledgeable counselors provided invaluable advice and assistance at every step. I’m grateful for their dedication and expertise.",
+    name: "A Dream Within a Dream",
+    title: "",
+  },
+  {
+    quote:
+      "I highly recommend HorizonWings services to students aiming to study overseas. Their team helped me a lot from selecting the right program to accommodation facilities, they made the entire process convenient. Their team went above and beyond to help me secure admission to a top university abroad.",
+    name: "Pride and Prejudice",
+    title: "",
+  },
+  {
+    quote:
+      "HorizonWings made my dream of studying abroad a reality. I’m so glad I chose them for my overseas education journey. I found the perfect university and program for my goals.",
+    name: "Anamika Agarwal",
+    title: "",
+  },
+];
 
 const MobileTestimonial = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+  };
   return (
-    <div>
-      {/* <!--Carousel--> */}
-      <div
-        id="carouselExampleCaptions"
-        className="relative"
-        data-twe-carousel-init
-        data-twe-carousel-slide
-      >
-        <div className="relative w-screen overflow-hidden after:clear-both after:block after:content-['']">
-          {/* <!--First Testimonial / Carousel item--> */}
+    <div className="py-20 bg-white">
+      <Slider {...settings}>
+        {testimonials.map((item, idx) => (
           <div
-            className="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-            data-twe-carousel-active
-            data-twe-carousel-item
-            style={{ backfaceVisibility: "hidden" }}
+            className="w-[300px] rounded-2xl border flex-shrink-0 border-slate-700 px-8 py-6 bg-[#8ec442]"
+            key={item.name}
           >
-            <p className="mx-auto max-w-4xl text-xl italic text-neutral-700 dark:text-neutral-300">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-              error amet numquam iure provident voluptate esse quasi, voluptas
-              nostrum quisquam!
-            </p>
-            <div className="mb-6 mt-12 flex justify-center">
-              <Image
-                src="/images/application.png"
-                className="h-24 w-24 rounded-full shadow-lg dark:shadow-black/30"
-                alt="smaple image"
-                width={100}
-                height={100}
-              />
-            </div>
-            <p className="text-neutral-500 dark:text-neutral-300">
-              - Anna Morian
-            </p>
+            <blockquote>
+              <span className="text-sm leading-[1.6] text-white font-normal">
+                {item.quote}
+              </span>
+              <div className="mt-6 flex flex-row items-center">
+                <span className="flex flex-col gap-1">
+                  <span className="text-sm leading-[1.6] text-white font-normal">
+                    {item.name}
+                  </span>
+                  <span className="text-sm leading-[1.6] text-white font-normal">
+                    {item.title}
+                  </span>
+                </span>
+              </div>
+            </blockquote>
           </div>
-        </div>
-
-        {/* <!--Carousel Controls - prev item--> */}
-        <button
-          className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
-          type="button"
-          data-twe-target="#carouselExampleCaptions"
-          data-twe-slide="prev"
-        >
-          <span className="inline-block h-8 w-8">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 19.5L8.25 12l7.5-7.5"
-              />
-            </svg>
-          </span>
-          <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-            Previous
-          </span>
-        </button>
-        {/* <!--Carousel Controls - next item--> */}
-        <button
-          className="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
-          type="button"
-          data-twe-target="#carouselExampleCaptions"
-          data-twe-slide="next"
-        >
-          <span className="inline-block h-8 w-8">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </span>
-          <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-            Next
-          </span>
-        </button>
-      </div>
+        ))}
+      </Slider>
     </div>
   );
 };
-
 export default MobileTestimonial;

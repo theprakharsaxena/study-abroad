@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import { InfiniteMovingCardsDemo } from "./components/InfiniteMovingCardsDemo";
 import { LampDemo } from "./components/LampDemo";
 import MobileServicesPage from "./components/MobileServicesPage";
+import MobileTestimonial from "./components/MobileTestimonial";
 import RegistrationForm from "./components/RegistrationForm";
 import Services from "./components/Services";
 import WhatsApp from "./components/WhatsApp";
@@ -27,12 +28,12 @@ export default function Home() {
       <Countries />
       <LampDemo />
       <RegistrationForm />
-      {/* <div className="hidden sm:flex"> */}
-      <InfiniteMovingCardsDemo />
-      {/* </div> */}
-      {/* <div className="sm:hidden flex">
+      <div className="hidden sm:flex">
+        <InfiniteMovingCardsDemo />
+      </div>
+      <div className="sm:hidden">
         <MobileTestimonial />
-      </div> */}
+      </div>
       <Footer />
     </div>
   );

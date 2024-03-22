@@ -88,13 +88,13 @@ const CounterCard: React.FC<CounterCardProps> = ({
   return (
     <div ref={ref}>
       <div className="flex items-center space-x-4 justify-center">
-        <div className="text-[#52813d] text-6xl">{icon}</div>
-        <div className="flex flex-col items-start text-4xl">
+        <div className="text-[#52813d] text-6xl sm:text-7xl">{icon}</div>
+        <div className="flex flex-col items-start text-4xl sm:text-5xl">
           <div className="text-black">
             {counterValue}
             {additional}
           </div>
-          <div className="text-xl text-[#eff8ff]">{label}</div>
+          <div className="text-xl text-[#eff8ff] sm:text-2xl">{label}</div>
         </div>
       </div>
     </div>
