@@ -34,12 +34,12 @@ body {
 }
 
 .page1 {
-  background-image: url("/images/bgm1.webp");
+  background-image: url("/images/bgm1.png");
 }
 
 @media (min-width: 640px) {
   .page1 {
-    background-image: url("/images/bg1.webp");
+    background-image: url("/images/bg1.png");
   }
 }
 
