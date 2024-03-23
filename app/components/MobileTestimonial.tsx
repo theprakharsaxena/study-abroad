@@ -1,8 +1,7 @@
 "use client";
-import Slider from "react-slick";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const testimonials = [
   {
@@ -45,32 +44,38 @@ const MobileTestimonial = () => {
     slidesToScroll: 1,
     speed: 500,
   };
+  const items = testimonials.map((item, idx) => (
+    <div
+      className="w-11/12 mx-auto rounded-2xl border flex-shrink-0 border-slate-700 px-8 py-6 bg-[#8ec442]"
+      key={item.name}
+    >
+      <blockquote>
+        <span className="text-sm leading-[1.6] text-white font-normal">
+          {item.quote}
+        </span>
+        <div className="mt-6 flex flex-row items-center">
+          <span className="flex flex-col gap-1">
+            <span className="text-sm leading-[1.6] text-white font-normal">
+              {item.name}
+            </span>
+            <span className="text-sm leading-[1.6] text-white font-normal">
+              {item.title}
+            </span>
+          </span>
+        </div>
+      </blockquote>
+    </div>
+  ));
   return (
-    <div className="py-20 bg-white">
-      <Slider {...settings}>
-        {testimonials.map((item, idx) => (
-          <div
-            className="w-[300px] rounded-2xl border flex-shrink-0 border-slate-700 px-8 py-6 bg-[#8ec442]"
-            key={item.name}
-          >
-            <blockquote>
-              <span className="text-sm leading-[1.6] text-white font-normal">
-                {item.quote}
-              </span>
-              <div className="mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] text-white font-normal">
-                    {item.name}
-                  </span>
-                  <span className="text-sm leading-[1.6] text-white font-normal">
-                    {item.title}
-                  </span>
-                </span>
-              </div>
-            </blockquote>
-          </div>
-        ))}
-      </Slider>
+    <div className="py-10">
+      <AliceCarousel
+        mouseTracking
+        items={items}
+        responsive={{
+          0: { items: 1 },
+        }}
+        controlsStrategy="alternate"
+      />
     </div>
   );
 };

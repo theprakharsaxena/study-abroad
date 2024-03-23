@@ -88,16 +88,22 @@ const RegistrationForm = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0 mb-8">
               <div className="flex flex-col">
-                <h5 className="font-bold text-lg">Email:</h5>
-                <p className="text-xl">info.horizonwings@gmail.com</p>
-                <p className="text-xl">hitesh.horizonwings@gmail.com</p>
-                <p className="text-xl">anusha.horizonwings@gmail.com</p>
+                <h5 className="font-bold xl:text-lg">Email:</h5>
+                <p className="text-lg xl:text-xl">
+                  info.horizonwings@gmail.com
+                </p>
+                <p className="text-lg xl:text-xl">
+                  hitesh.horizonwings@gmail.com
+                </p>
+                <p className="text-lg xl:text-xl">
+                  anusha.horizonwings@gmail.com
+                </p>
               </div>
               <div className="flex flex-col">
-                <h5 className="font-bold text-lg">Phone:</h5>
-                <p className="text-xl">+91 9953102105</p>
-                <p className="text-xl">+91 8920338680</p>
-                <p className="text-xl">+91 9695033798</p>
+                <h5 className="font-bold xl:text-lg">Phone:</h5>
+                <p className="text-lg xl:text-xl">+91 9953102105</p>
+                <p className="text-lg xl:text-xl">+91 8920338680</p>
+                <p className="text-lg xl:text-xl">+91 9695033798</p>
               </div>
             </div>
             <form action="#">
