@@ -2,6 +2,8 @@
 import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import Image from "next/image";
+import { IoCall, IoLocation } from "react-icons/io5";
+import { HiOutlineMail } from "react-icons/hi";
 
 var today = new Date();
 var year = today.getFullYear();
@@ -76,13 +78,36 @@ const Footer = () => {
             </div>
           </div>
           <div className="sm:col-span-3">
-            <p className="flex font-normal text-sm text-black items-end h-full">
-              Noida, India <br />
-              +91 9953102105 <br />
-              +91 8920338680 <br />
-              +91 9695033798 <br />
-              hitesh.horizonwings@gmail.com
-            </p>
+            <div className="flex flex-col space-y-1 font-normal text-sm text-black items-start h-full">
+              <span className="flex space-x-1 items-center">
+                <IoLocation className="text-[#52813d]" />
+                <p>Noida, India</p>
+              </span>
+              <span className="flex space-x-1 items-center">
+                <IoCall className="text-[#52813d]" />
+                <p>+91 9953102105</p>
+              </span>
+              <span className="flex space-x-1 items-center">
+                <IoCall className="text-[#52813d]" />
+                <p>+91 8920338680</p>
+              </span>
+              <span className="flex space-x-1 items-center">
+                <IoCall className="text-[#52813d]" />
+                <p>+91 9695033798</p>
+              </span>
+              <span className="flex space-x-1 items-center">
+                <HiOutlineMail className="text-[#52813d]" />
+                <p>info.horizonwings@gmail.com</p>
+              </span>
+              <span className="flex space-x-1 items-center">
+                <HiOutlineMail className="text-[#52813d]" />
+                <p>hitesh.horizonwings@gmail.com</p>
+              </span>
+              <span className="flex space-x-1 items-center">
+                <HiOutlineMail className="text-[#52813d]" />
+                <p>anusha.horizonwings@gmail.com</p>
+              </span>
+            </div>
           </div>
         </div>
         <div className="bg-[#8ec442] p-1 mt-8 pb-1"></div>
@@ -90,7 +115,7 @@ const Footer = () => {
           <p className="font-normal text-sm pt-3">
             Horizonwings Overseas Education &copy; {year} All Rights Reserved
           </p>
-          <div className="flex gap-10 pt-3">
+          <div className="flex pt-3 justify-between">
             <p className="font-normal text-sm">Terms & Conditions</p>
             <p className="font-normal text-sm">Privacy & Cookies</p>
           </div>

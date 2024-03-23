@@ -79,7 +79,7 @@ const RegistrationForm = () => {
       </div>
       <div>
         <section className="">
-          <div className="py-8 lg:py-16 px-4 max-w-screen-md">
+          <div className="py-10 lg:py-20 px-4 max-w-screen-md">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
               Register Now
             </h2>
@@ -90,6 +90,8 @@ const RegistrationForm = () => {
               <div className="flex flex-col">
                 <h5 className="font-bold text-lg">Email:</h5>
                 <p className="text-xl">info.horizonwings@gmail.com</p>
+                <p className="text-xl">hitesh.horizonwings@gmail.com</p>
+                <p className="text-xl">anusha.horizonwings@gmail.com</p>
               </div>
               <div className="flex flex-col">
                 <h5 className="font-bold text-lg">Phone:</h5>

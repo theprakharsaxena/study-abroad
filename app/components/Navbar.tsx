@@ -5,6 +5,7 @@ import { FaArrowRight, FaFacebookF } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const NavbarData = [
   {
@@ -56,37 +57,38 @@ const Navbar = () => {
         }
       >
         {topbar && (
-          <div className="mx-[8vw] sm:mx-12 flex justify-between items-center py-3 sm:p-3 text-white my-2">
-            <a href="/" className="hover:animate-jump">
+          <div className="mx-[8vw] sm:mx-12 flex justify-between items-center p-3 text-white xl:my-2">
+            <Link href="/" className="hover:animate-jump">
               <Image
                 src="/images/logo_bg_remove.png"
                 width={125}
                 height={125}
                 alt="Horizonwings Overseas Education"
+                className="xl:w-[125px] w-[100px]"
               />
-            </a>
+            </Link>
             <div className="flex space-x-40 items-center">
               <div className="flex space-x-2">
                 <a
                   href="https://horizonwingsoverseaseducation.com/your-facebook-url"
-                  className="w-10 sm:h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer"
+                  className="xl:w-10 xl:h-10 w-8 h-8 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer"
                 >
-                  <FaFacebookF className="text-[#52813d]" />
+                  <FaFacebookF className="text-[#52813d] xl:text-base text-sm" />
                 </a>
-                {/* <div className="w-10 sm:h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
-                  <FaTwitter className="text-[#52813d]" />
+                {/* <div className="xl:w-10 xl:h-10 w-8 h-8 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer">
+                  <FaTwitter className="text-[#52813d] xl:text-base text-sm" />
                 </div> */}
                 <a
                   href="https://www.instagram.com/horizonwings_overseaseducation"
-                  className="w-10 sm:h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer"
+                  className="xl:w-10 xl:h-10 w-8 h-8 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer"
                 >
-                  <AiFillInstagram className="text-[#52813d]" />
+                  <AiFillInstagram className="text-[#52813d] xl:text-base text-sm" />
                 </a>
                 <a
                   href="https://www.linkedin.com/company/horizonwings-overseas-education/"
-                  className="w-10 sm:h-10 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer"
+                  className="xl:w-10 xl:h-10 w-8 h-8 flex items-center justify-center rounded-full bg-gray-500/10 hover:animate-fade cursor-pointer"
                 >
-                  <FaLinkedin className="text-[#52813d]" />
+                  <FaLinkedin className="text-[#52813d] xl:text-base text-sm" />
                 </a>
               </div>
             </div>
@@ -135,27 +137,27 @@ const Navbar = () => {
         <div
           className={
             topbar
-              ? "mx-[60px] py-2 pl-3 bg-gray-500/10 relative rounded-xl hidden sm:flex"
+              ? "mx-[60px] xl:py-2 py-1 pl-3 bg-gray-500/10 relative rounded-xl hidden sm:flex"
               : "bg-white mx-[60px] py-2 pl-3 relative rounded-xl hidden sm:flex"
           }
         >
           <ul className="hidden sm:flex">
-            <li className="p-2 md:p-4 md:text-lg hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 lg:p-3 xl:p-4 xl:text-lg hover:text-[#52813d] hover:animate-wiggle">
               <a href="#home" onClick={handleNav}>
                 Home
               </a>
             </li>
-            <li className="p-2 md:p-4 md:text-lg hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 lg:p-3 xl:p-4 xl:text-lg hover:text-[#52813d] hover:animate-wiggle">
               <a href="#services" onClick={handleNav}>
                 Services
               </a>
             </li>
-            <li className="p-2 md:p-4 md:text-lg hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 lg:p-3 xl:p-4 xl:text-lg hover:text-[#52813d] hover:animate-wiggle">
               <a href="#about" onClick={handleNav}>
                 About
               </a>
             </li>
-            <li className="p-2 md:p-4 md:text-lg hover:text-[#52813d] hover:animate-wiggle">
+            <li className="p-2 lg:p-3 xl:p-4 xl:text-lg hover:text-[#52813d] hover:animate-wiggle">
               <a href="#contact" onClick={handleNav}>
                 Contact
               </a>
@@ -165,8 +167,8 @@ const Navbar = () => {
             href="#contact"
             className="absolute right-0 h-full top-0 flex cursor-pointer hover:animate-fade-right"
           >
-            <div className="border-l-transparent border-solid border-l-[35px] border-b-[75px] border-b-[#52813d]"></div>
-            <div className="bg-[#52813d] px-[52px] flex items-center text-white text-lg rounded-r-[0.65rem] space-x-3">
+            <div className="border-l-transparent border-solid xl:border-l-[35px] border-l-[25px] xl:border-b-[75px] border-b-[56px] border-b-[#52813d]"></div>
+            <div className="bg-[#52813d] xl:px-[52px] px-[40px] flex items-center text-white xl:text-lg rounded-r-[0.65rem] xl:space-x-3 space-x-1">
               <h4 className="">Register Now</h4>
               <FaArrowRight />
             </div>

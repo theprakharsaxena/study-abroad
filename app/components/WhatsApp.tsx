@@ -7,7 +7,7 @@ const WhatsApp = () => {
       <a href="https://wa.me/9953102105">
         <Image
           src="/images/whatsapp.png"
-          className="m-5 cursor-pointer w-[50px] sm:w-[60px]"
+          className="m-5 cursor-pointer w-[50px] xl:w-[60px]"
           alt="whatsaap logo"
           height={100}
           width={60}
