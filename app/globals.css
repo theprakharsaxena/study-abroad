@@ -47,7 +47,7 @@ body {
   background-position: top;
 }
 
-@media (min-height: 500px) {
+@media (min-height: 600px) {
   .page1 {
     background-position: center;
   }
