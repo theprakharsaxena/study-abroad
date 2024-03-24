@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="flex flex-col items-start justify-start bg-fixed bg-cover page1 bg-[#eff8ff]"
+        className="flex flex-col items-start justify-start bg-[#eff8ff] bg-[url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiTCa5UrICizjb7Es8Us3BHnnLNMqZEg4zCEmcAuPrsl30EO6IL3s1WWhQXYn3qnPhq6AxkY49ZhEVDU6qufOqpDO9QlqW8ccIJbmdxJNDFlRL5tEP0Y_V817ufMF5iacmLVZvgp-PjGU3kGXhtfLXaDnHmfb2v0it7LmtdC2lEdz2JQp-oaSNbqkrbuU/s16000/bgm1.png')] sm:bg-[url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi99mAtjQZNh_7M37NaKOLsSkAlFUJfQOBkbx3ZgU9hqivqJyAmkgex_GBud1PRI8jn-X43YS6x0kLfN5gAHkAfbhppZbaei9o6qdb53GOCU2708K4_mNSTF9_FIJuxfHtBi7-FEhxEPZJt-lJAvY8AbqqBKF27R3G08NXXLHiBnEXKhiAuDxF4i8RsrgU/s16000/bg1.png')] bg-cover page1"
         id="home"
       >
         <div className="hidden sm:flex w-full">
