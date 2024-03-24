@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="flex flex-col items-start justify-start bg-fixed bg-cover page1 bg-[#eff8ff]"
+        className="flex flex-col items-start justify-start bg-fixed bg-cover page1 bg-[#777c7f]"
         id="home"
       >
         <div className="hidden sm:flex w-full">

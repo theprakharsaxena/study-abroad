@@ -86,7 +86,7 @@ const RegistrationForm = () => {
             <p className="mb-8 font-light text-gray-500  sm:text-xl">
               Make your dreams come true today!
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0 mb-8 text-black">
               <div className="flex flex-col">
                 <h5 className="font-bold xl:text-lg">Email:</h5>
                 <p className="text-lg xl:text-xl">

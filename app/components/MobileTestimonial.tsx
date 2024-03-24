@@ -67,7 +67,12 @@ const MobileTestimonial = () => {
     </div>
   ));
   return (
-    <div className="py-10">
+    <div className="py-10 bg-white">
+      <div className="animate-fade-up px-[8vw]">
+        <h2 className="text-5xl sm:text-7xl text-[#52813d] font-bold flex justify-center text-center py-10 pb-16 animate-fade-up">
+          Testimonials
+        </h2>
+      </div>
       <AliceCarousel
         mouseTracking
         items={items}

@@ -116,6 +116,12 @@ function MobileServicesPage() {
         {serviceData.map(({ id, image, title, description }, index) => (
           <section id={id} key={index} className="pb-20">
             <div className="grid grid-cols-1 gap-8">
+              <div className="flex items-center justify-center">
+                <div className="flex flex-col justify-center space-y-5 h-full">
+                  <h3 className="text-2xl font-bold text-white">{title}</h3>
+                  <p className="text-white text-md">{description}</p>
+                </div>
+              </div>
               <div className="flex w-full justify-center">
                 <Image
                   loader={imageLoader}
@@ -128,12 +134,6 @@ function MobileServicesPage() {
                     "w-[400px] block shadow-2xl shadow-black rounded-3xl"
                   }
                 />
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="flex flex-col justify-center space-y-5 h-full">
-                  <h3 className="text-2xl font-bold text-white">{title}</h3>
-                  <p className="text-white text-md">{description}</p>
-                </div>
               </div>
             </div>
           </section>
