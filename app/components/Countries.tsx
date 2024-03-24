@@ -44,7 +44,7 @@ const data = [
   },
   {
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/255px-Flag_of_Malaysia.svg.png",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwA66BaVUMDJrE5mYUt4zQFGcpxpA1p1UGoUh1AgCO2S2E68f_eEcSVfsIGO0gN2V9PLyE1DBMM8TfWXmqweedUkEx16LYQHN8XMehSTFcZ1B3MEp1Lisw9_EUAfDwDBukGvbelJcncSbPZrfrl1_H_EgtYwdOxeyzDdXYiKqTpngz2afJGmijK3zeHh4/s1200/uk.png",
     title: "Malaysia",
   },
 ];
