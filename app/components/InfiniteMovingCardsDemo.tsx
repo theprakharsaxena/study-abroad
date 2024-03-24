@@ -35,13 +35,13 @@ const testimonials = [
   {
     quote:
       "I cannot thank enough HorizonWings Overseas Education for guiding me toward my educational goals overseas. Their knowledgeable counselors provided invaluable advice and assistance at every step. I’m grateful for their dedication and expertise.",
-    name: "A Dream Within a Dream",
+    name: "Shivam Yadav",
     title: "",
   },
   {
     quote:
       "I highly recommend HorizonWings services to students aiming to study overseas. Their team helped me a lot from selecting the right program to accommodation facilities, they made the entire process convenient. Their team went above and beyond to help me secure admission to a top university abroad.",
-    name: "Pride and Prejudice",
+    name: "Puneet Yadav",
     title: "",
   },
   {
