@@ -39,7 +39,7 @@ const data = [
   },
   {
     image:
-      "https://i.pinimg.com/originals/7d/a4/7e/7da47e14052a9d3bdf3bf9a0d96dca29.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje6MNklw1NsbCRyiJECNgWaErgJxRrGhcp1hsnPHoZBjMmuJbKABsQng8UKy8X_QueKU_n5M6Q9A4RT_N0XP5Hz11Xyl2SBZNq2DirQ2UdTiQkIsurEcX8D8YIliU-uW1qxd1csOFizLw7soIpO-fCJXxIL2rIc9LUBBN_sn1FjGCKHmPzeoGg93SsFmU/s16000/Untitled%20design%20(14).png",
     title: "Dubai",
   },
   {
