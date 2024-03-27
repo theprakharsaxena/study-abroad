@@ -7,7 +7,6 @@ import MobileServicesPage from "./components/MobileServicesPage";
 import MobileTestimonial from "./components/MobileTestimonial";
 import RegistrationForm from "./components/RegistrationForm";
 import Services from "./components/Services";
-import WhatsApp from "./components/WhatsApp";
 
 // #52813d
 // #8ec442
@@ -18,7 +17,6 @@ import WhatsApp from "./components/WhatsApp";
 export default function Home() {
   return (
     <div className="font-body">
-      <WhatsApp />
       <Hero />
       <div className="hidden sm:flex">
         <Services />
@@ -35,7 +33,7 @@ export default function Home() {
       <div className="sm:hidden">
         <MobileTestimonial />
       </div>
-      <Footer />
+      <Footer page="home" />
     </div>
   );
 }

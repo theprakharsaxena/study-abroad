@@ -4,11 +4,16 @@ import { AiFillInstagram } from "react-icons/ai";
 import Image from "next/image";
 import { IoCall, IoLocation } from "react-icons/io5";
 import { HiOutlineMail } from "react-icons/hi";
+import Link from "next/link";
 
 var today = new Date();
 var year = today.getFullYear();
 
-const Footer = () => {
+interface FooterProps {
+  page: string;
+}
+
+const Footer = (props: FooterProps) => {
   return (
     <div className="bg-[#eff8ff]">
       <div className="mx-10 py-12 text-black">
@@ -46,20 +51,22 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col items-start space-y-16 sm:col-span-4">
-            <div className="flex items-center justify-around w-full">
-              <a href="/our-cause" className="other-link">
-                Home
-              </a>
-              <a href="/" className="other-link">
-                Services
-              </a>
-              <a href="/" className="other-link">
-                About Us
-              </a>
-              <a href="/" className="other-link">
-                Register
-              </a>
-            </div>
+            {props?.page === "home" && (
+              <div className="flex items-center justify-around w-full">
+                <a href="#home" className="other-link">
+                  Home
+                </a>
+                <a href="#services" className="other-link">
+                  Services
+                </a>
+                <a href="#about" className="other-link">
+                  About Us
+                </a>
+                <a href="#contact" className="other-link">
+                  Register
+                </a>
+              </div>
+            )}
             <div className="flex flex-col justify-between w-full">
               <h3 className="text-xl">Study Abroad, Register Now</h3>
               <div className="flex mt-3">
@@ -116,7 +123,9 @@ const Footer = () => {
             Horizonwings Overseas Education &copy; {year} All Rights Reserved
           </p>
           <div className="flex pt-3 justify-between">
-            <p className="font-normal text-sm">Terms & Conditions</p>
+            <Link href="/termsandconditions" className="font-normal text-sm">
+              Terms & Conditions
+            </Link>
             <p className="font-normal text-sm">Privacy & Cookies</p>
           </div>
         </div>

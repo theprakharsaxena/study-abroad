@@ -27,7 +27,11 @@ const MobileNavbarData = [
   },
 ];
 
-const MobileNavbar = () => {
+interface NavbarProps {
+  page: string;
+}
+
+const MobileNavbar = (props: NavbarProps) => {
   // const [active, setActive] = useState("Home")
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -72,50 +76,54 @@ const MobileNavbar = () => {
               </a>
             </div>
           </div>
-          <div
-            onClick={handleNav}
-            className="block sm:hidden z-10 cursor-pointer text-[#52813d]"
-          >
-            {nav ? (
-              <AiOutlineClose size={20} className="" />
-            ) : (
-              <AiOutlineMenu size={20} />
-            )}
-          </div>
-          <div
-            className={
-              nav
-                ? "sm:hidden absolute top-20 right-3 flex justify-center items-start bg-[#52813d] rounded-xl ease-in duration-300 shadow-2xl shadow-black"
-                : "sm:hidden absolute top-20 right-[-100%] flex justify-center items-start bg-[#52813d] ease-in duration-300 shadow-2xl shadow-black"
-            }
-          >
-            <ul>
-              <li className="px-6 py-2 text-xl hover:text-[#8ec442] hover:animate-wiggle flex items-center space-x-2">
-                <FaHome />
-                <a href="#home" onClick={handleNav}>
-                  Home
-                </a>
-              </li>
-              <li className="px-6 py-2 text-xl hover:text-[#8ec442] hover:animate-wiggle flex items-center space-x-2">
-                <MdDesignServices />
-                <a href="#services2" onClick={handleNav}>
-                  Services
-                </a>
-              </li>
-              <li className="px-6 py-2 text-xl hover:text-[#8ec442] hover:animate-wiggle flex items-center space-x-2">
-                <FaInfoCircle />
-                <a href="#about" onClick={handleNav}>
-                  About
-                </a>
-              </li>
-              <li className="px-6 py-2 text-xl hover:text-[#8ec442] hover:animate-wiggle flex items-center space-x-2">
-                <IoMdContacts />
-                <a href="#contact" onClick={handleNav}>
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+          {props?.page === "home" && (
+            <div
+              onClick={handleNav}
+              className="block sm:hidden z-10 cursor-pointer text-[#52813d]"
+            >
+              {nav ? (
+                <AiOutlineClose size={20} className="" />
+              ) : (
+                <AiOutlineMenu size={20} />
+              )}
+            </div>
+          )}
+          {props?.page === "home" && (
+            <div
+              className={
+                nav
+                  ? "sm:hidden absolute top-20 right-3 flex justify-center items-start bg-[#52813d] rounded-xl ease-in duration-300 shadow-2xl shadow-black"
+                  : "sm:hidden absolute top-20 right-[-100%] flex justify-center items-start bg-[#52813d] ease-in duration-300 shadow-2xl shadow-black"
+              }
+            >
+              <ul>
+                <li className="px-6 py-2 text-xl hover:text-[#8ec442] hover:animate-wiggle flex items-center space-x-2">
+                  <FaHome />
+                  <a href="#home" onClick={handleNav}>
+                    Home
+                  </a>
+                </li>
+                <li className="px-6 py-2 text-xl hover:text-[#8ec442] hover:animate-wiggle flex items-center space-x-2">
+                  <MdDesignServices />
+                  <a href="#services2" onClick={handleNav}>
+                    Services
+                  </a>
+                </li>
+                <li className="px-6 py-2 text-xl hover:text-[#8ec442] hover:animate-wiggle flex items-center space-x-2">
+                  <FaInfoCircle />
+                  <a href="#about" onClick={handleNav}>
+                    About
+                  </a>
+                </li>
+                <li className="px-6 py-2 text-xl hover:text-[#8ec442] hover:animate-wiggle flex items-center space-x-2">
+                  <IoMdContacts />
+                  <a href="#contact" onClick={handleNav}>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </>

@@ -11,10 +11,10 @@ const Hero = () => {
         id="home"
       >
         <div className="hidden sm:flex w-full">
-          <Navbar />
+          <Navbar page="home" />
         </div>
         <div className="sm:hidden flex">
-          <MobileNavbar />
+          <MobileNavbar page="home" />
         </div>
         {/* Overlay */}
         {/* <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/80 z-[2]" /> */}
