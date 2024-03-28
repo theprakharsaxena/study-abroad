@@ -14,10 +14,10 @@ interface FormData {
 
 const initialFormData: FormData = {
   name: "",
-  mobile: "",
   emailId: "",
-  gender: "",
+  mobile: "",
   countryCode: "91",
+  gender: "",
   previousEducation: "",
 };
 
@@ -49,7 +49,7 @@ const RegistrationForm = () => {
       };
 
       const response = await axios.post(
-        "https://horizonwings-production.up.railway.app/api/v1/registerStudent",
+        "http://horizonwingsoverseaseducation.com:8080/api/v1/registerStudent",
         formData,
         config
       );
@@ -124,15 +124,26 @@ const RegistrationForm = () => {
                     <label className="block mb-2 text-sm font-lg font-semibold text-gray-900">
                       Contact No.*
                     </label>
-                    <input
-                      type="text"
-                      value={formData.mobile}
-                      onChange={handleChange("mobile")}
-                      id="contact_no"
-                      className="border border-gray-300 rounded-lg p-2.5 outline-none focus:border-[#8ec442] focus:ring-[#8ec442] bg-gray-50 shadow-sm text-gray-900 text-sm block w-full"
-                      placeholder="0123456789"
-                      required
-                    />
+                    <div className="flex items-center space-x-3">
+                      <input
+                        type="text"
+                        value={formData.countryCode}
+                        onChange={handleChange("countryCode")}
+                        id="contact_no"
+                        className="border border-gray-300 rounded-lg p-2.5 outline-none focus:border-[#8ec442] focus:ring-[#8ec442] bg-gray-50 shadow-sm text-gray-900 text-sm block w-14"
+                        placeholder="91"
+                        required
+                      />
+                      <input
+                        type="text"
+                        value={formData.mobile}
+                        onChange={handleChange("mobile")}
+                        id="contact_no"
+                        className="border border-gray-300 rounded-lg p-2.5 outline-none focus:border-[#8ec442] focus:ring-[#8ec442] bg-gray-50 shadow-sm text-gray-900 text-sm block w-full"
+                        placeholder="0123456789"
+                        required
+                      />
+                    </div>
                   </div>
                 </div>
                 <div>
