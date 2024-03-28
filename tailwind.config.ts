@@ -21,6 +21,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        bg1: "url('/images/bg1.png')",
+        bgm1: "url('/images/bgm1.png')",
       },
       animation: {
         scroll:
