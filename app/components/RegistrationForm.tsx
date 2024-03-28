@@ -1,6 +1,8 @@
 "use client";
 import { ChangeEvent, useState } from "react";
 import { GlobeDemo } from "./GlobeDemo";
+import { Bounce, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 interface FormData {
@@ -49,13 +51,25 @@ const RegistrationForm = () => {
       };
 
       const response = await axios.post(
-        "http://horizonwingsoverseaseducation.com:8080/api/v1/registerStudent",
+        "http://13.234.173.202:8080/api/v1/registerStudent",
         formData,
         config
       );
-      console.log("response", response);
+      if (response) {
+        toast.success("Response submitted successfully", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
+      }
+      console.log("response");
 
-      alert("Response submitted successfully !");
       setFormData({
         name: "",
         mobile: "",
